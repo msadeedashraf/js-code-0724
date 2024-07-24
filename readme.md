@@ -1,33 +1,3 @@
-https://www.python.org/downloads/
-
-Documentation - https://docs.python.org/3.12/index.html
-
-Tutorial - https://docs.python.org/3.12/tutorial/index.html
-
-VS Code Extensions for Python
-
-Python Indent
-
-Python
-
-Python Debugger
-
-Pylance
-
-> py --version
-
-> py
-
->
-
-> > > quit()
-
-> > > test
-
-For comments
-
-ctrl + /
-
 Types of Computer Languages
 
 Assignment
@@ -56,9 +26,9 @@ JavaScript
 
 Object based language not an Object-oriented Language
 
-> HTML is static.
+HTML is static.
 
-> To manipulate the HTML DOM
+To manipulate the HTML DOM
 
 NODE is a runtime for JavaScript
 
@@ -82,4 +52,4 @@ go to terminal on the VS code in the folder on your local disk
 
 and do clone using
 
-> git clone https://github.com/msadeedashraf/gittest.git
+git clone https://github.com/msadeedashraf/gittest.git
