@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Convertor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Currency Convertor</h1>
+    <label for="amt">Amount</label>
+    <input type="number" id="amt"  value="100"  >
+    <br>
+
+    <label for="cr">Conversion Rate</label>
+    <input type="number" id="cr" value="0.75"   >
+    <br>
+
+    <button onclick="calculateCurrency()" id="calculate">Convert</button>
+    <br>
+    <label for="total">Converted Amount : </label>
+    <span id="total"></span>
+</div>
+
+    <script src="script.js" ></script>
+</body>
+</html>
