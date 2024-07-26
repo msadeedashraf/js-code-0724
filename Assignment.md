@@ -5,3 +5,8 @@ Find the difference Pascal vs Camel vs Snake case?
 Practice Set:
 P1. Write a program that add three numbers.
 P2. Program to Divide two numbers.
+
+Project 1 : Create a TIP Calculator
+Project 2 : Create a BMI Calculator
+Project 3 : Create a Loan Calculator
+Project 4 : Convert cen to Fer and Fer to Cen (switch using the radio button)
