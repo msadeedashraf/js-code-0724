@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Statements</title>
+</head>
+<body>
+    
+    <h1>Switch Statements</h1>
+
+    <p id="demo">This is the result</p>
+    <p id="time-demo">Time</p>
+    <button onclick="Switch_Statement()">Day of the week</button>
+
+    <button onclick="greetings()">Greeting</button>
+    <script>
+
+
+function greetings()
+{
+
+const time = new Date().getHours();
+
+console.log(time)
+
+let greeting;
+
+switch (time) {
+  case 11:
+    greeting = "Good Morning";
+    break;
+
+  case 12:
+    greeting = "Good Afternoon";
+    break;
+  default:
+    greeting = "Good Evening";
+    break;
+}
+
+document.getElementById("time-demo").innerHTML = greeting;
+
+
+}
+
+
+
+
+
+        function Switch_Statement()
+        {
+
+            let day;
+            //console.log(new     Date().getDay());
+
+            let dayNum = new Date().getDay();
+
+
+            switch(dayNum) {
+            case 0:
+                day = "Sunday"
+                break;
+            case 1:
+                day = "Monday"
+                break;
+            case 2:
+                day = "Tuesday"
+                break;
+            case 3:
+                day = "Wednesday"
+                break;
+            case 4:
+                day = "Thursday"
+                break;
+            case 5:
+                day = "Friday"
+                break;
+            case 6:
+                day = "Saturday"
+                break;
+           
+            }
+
+            document.getElementById("demo").innerHTML = "Todays day is " + day;
+
+            return 
+        }
+
+    </script>
+</body>
+</html>

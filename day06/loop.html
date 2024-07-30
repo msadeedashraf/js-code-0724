@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    
+    <h1>Loops</h1>
+
+    <p id="demo">This is the result</p>
+
+    <div id="cars">
+
+        
+    </div>
+
+    <button onclick="Loops()">Click Me</button>
+    <button onclick="print_cars()">Print Cars</button>
+
+
+    <script>
+
+
+
+function print_cars()
+{
+    const cars = ["BMW", "Volvo", "Saab", "Ford", "Honda", "Toyota","BMW", "Volvo", "Saab", "Ford", "Honda", "Toyota","BMW", "Volvo", "Saab", "Ford", "Honda", "Toyota"];
+    const len = cars.length;
+    let text = "<br>";
+
+    for (let i = 0; i < len; i++) {
+  text += cars[i] + "<br>";
+
+  //console.log(cars[i]);
+  //console.log(text);
+
+}
+ //myhtml = 
+
+document.getElementById("cars").innerHTML = text;
+    
+}
+
+
+
+        function Loops()
+        {
+
+for (num = 2 ; num<=5; num++)
+{
+    for (a = 1  ; a <=10 ; a++) 
+            {
+             console.log(num + " * "+ a + " = " + num*a );
+            }
+
+    
+}
+            
+
+            return 
+        }
+
+    </script>
+</body>
+</html>
