@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statements</title>
+</head>
+<body>
+    
+    <h1>Conditional Statements</h1>
+
+    <p id="demo">This is the result</p>
+    <button onclick="conditional_Statement()">Click Me</button>
+
+
+    <script>
+        function conditional_Statement()
+        {
+            var myName = prompt("What's Your Name : ");
+            var myAge =  prompt("What's your age : ");
+            console.log(myAge, myName);
+
+            if ((myAge > 16) && (myAge < 70))
+        {
+            document.getElementById("demo").innerHTML  = myName + " you can drive the car";
+
+        }
+        else if (myAge >= 70)
+        {
+            document.getElementById("demo").innerHTML  = myName + " you have to re-tested again";
+
+        }
+        else if (myAge <= 2)
+        {
+            document.getElementById("demo").innerHTML  = myName +  " you are Infant";
+
+        }
+        else
+        {
+            document.getElementById("demo").innerHTML  = "You can't drive";
+
+
+        }
+
+           // return 
+        }
+
+    </script>
+</body>
+</html>

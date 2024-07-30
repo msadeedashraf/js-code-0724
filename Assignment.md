@@ -5,6 +5,7 @@ Find the difference Pascal vs Camel vs Snake case?
 Practice Set:
 P1. Write a program that add three numbers.
 P2. Program to Divide two numbers.
+P3. Take 5 input find the percentage and apply a condition if you passed or failed and grade them. (< 50 is fail, < 60 is C, < 70 B, < 80 A, Rest A+ )
 
 Project 1 : Create a TIP Calculator
 Project 2 : Create a BMI Calculator
