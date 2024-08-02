@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+<body>
+
+    <h1>Credit Card</h1>
+    <p id="demo"></p>
+<script>
+
+    //var myResult = creditCardConvertor("2123|212123|212132|2132", "|");
+    var myResult = creditCardConvertor("2123-2121223-1212-6556", "-");
+    document.getElementById("demo").innerHTML = myResult;
+
+
+   
+function creditCardConvertor(myCardNo , seperator)
+{
+    let text = myCardNo;
+    let myCardLen = text.length;
+
+const myCardArray = text.split(seperator)
+
+console.log(myCardArray.length);
+
+console.log(text.substring(myCardLen-4))
+
+var result="";
+for (a = 0; a<= myCardArray.length - 2; a++ )
+{
+     var myConterdCard =  "*".repeat(myCardArray[a].length);
+     result += myConterdCard +"-";
+    
+    }
+    
+    result += text.substring(myCardLen-4)
+    console.log(result)
+
+    text = text.substring(myCardLen-4)
+    console.log(myCardLen-4)
+
+    text = text.padStart(myCardLen,"*");
+    //****-****-****-2131
+    
+    //document.getElementById("demo").innerHTML = result;
+    return result;
+}
+
+
+</script>
+
+
+    
+</body>
+</html>

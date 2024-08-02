@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <h1>Objects</h1>
+
+<p id="demo"></p>
+
+
+    <script>
+        /*
+        const objName = 
+        {
+            name : value,
+            name : value,
+            name : value
+        }
+        */
+       
+        const car = {
+
+            make : "",
+            model : "",
+            color :""
+        }
+
+        const  bankaccount = {
+            openbal : "",
+            closebal : "",
+            accType : "",
+        }
+
+
+        const person = 
+                {
+                    firstName:"John", 
+                    lastName:"Doe", 
+                    age:50, 
+                    eyeColor:"blue",
+                    dob : "12-30-2000",
+                    fullName : function () {
+
+                        return this.firstName + " " +this.lastName;
+                    }  
+                }
+
+
+        var fname = "Sadeed";
+        console.log(fname);
+
+        console.log(typeof(fname))
+        console.log(typeof(person.age))
+        console.log(person.firstName)
+        console.log(person.age*10)
+        console.log(person.fullName())
+      
+
+
+var  myFname;
+myFname = "Sadeed"
+
+
+        // Create an Object
+const newPerson = {};
+
+// Add Properties
+newPerson.firstName = "John";
+newPerson.lastName = "Doe";
+newPerson.age = 50;
+newPerson.eyeColor = "blue";
+
+        //objectName.propertyName
+        console.log(newPerson.lastName)
+        console.log(newPerson.age)
+        
+
+
+// Create an Object
+const myObjPerson = new Object();
+
+// Add Properties
+myObjPerson.firstName = "John";
+myObjPerson.lastName = "Doe";
+myObjPerson.age = 70;
+myObjPerson.eyeColor = "blue";
+
+        //objectName["propertyName"]
+        console.log(myObjPerson["eyeColor"])
+        console.log(myObjPerson["age"])
+       
+
+// Create nested Objects
+const myObj = {
+  name: "John",
+  age: 30,
+  myCars: {
+    car1: "Ford",
+    car2: "BMW",
+    car3: "Fiat"
+  }
+}
+
+let p1 = "myCars";
+let p2 = "car2";
+console.log(myObj[p1][p2]) ;
+//console.log(myObj[myCars][car2]) ;  //this is an error      
+console.log(myObj.myCars.car2) ;        
+console.log(myObj["myCars"]["car2"]) ;        
+
+     
+
+// Create an Object
+const myPerson = {
+  firstName: "John",
+  lastName: "Doe",
+  id: 5566,
+};
+
+// Add a Method
+myPerson.name = function() {
+  return (this.firstName + " " + this.lastName);
+};
+
+// Display Object Data
+console.log(myPerson.name().toUpperCase());
+
+document.getElementById("demo").innerHTML =
+"My father is " + myPerson.name().toUpperCase();
+
+
+// Create an Object
+const myPerson2 = {
+  name: "Sadeed",
+  age: 30,
+  city: "New York"
+};
+
+
+let x = "city"
+
+console.log(myPerson2[x]);
+
+
+
+
+// Build a Text
+let text = "";
+for (let x in myPerson2) {
+  console.log(myPerson2[x]);
+  text += myPerson2[x] + " ";
+};
+
+// Display the Text
+//console.log(text) ;
+
+
+
+    </script>
+</body>
+</html>
