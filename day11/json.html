@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json Parsing</title>
+</head>
+<body>
+    <h1>Create Object from JSON String</h1>
+    <div id="demo">
+
+        
+
+    </div>
+    
+
+    <script>
+let text = '{"employees":[{"firstName":"John", "lastName":"Doe"},  {"firstName":"Anna", "lastName":"Smith"},{"firstName":"Peter", "lastName":"Jones"},{"firstName":"Peter", "lastName":"Jones"},{"firstName":"Peter", "lastName":"Jones"},{"firstName":"Peter", "lastName":"Jones"},{"firstName":"Peter", "lastName":"Jones"},{"firstName":"Peter", "lastName":"Jones"},{"firstName":"Peter", "lastName":"Jones"}]}'
+
+const myJson = JSON.parse(text);
+console.log(myJson);
+console.log(myJson.employees[1].lastName);
+console.log(myJson.employees.length);
+
+myHTML  = '<ul>' ;
+
+
+    myLastNameList = [];
+
+for (x = 0 ; x<myJson.employees.length ; x++)
+{
+
+
+
+     myLastNameList.push(`<li>${myJson.employees[x].lastName}</li>`);
+
+    
+}
+
+console.log('<ul>'+ myLastNameList.toString() +'</ul>' )
+
+myHTML = '<ul>'+ myLastNameList.toString() +'</ul>'
+document.getElementById("demo").innerHTML = myHTML ;
+
+
+console.log(text)
+    </script>
+</body>
+</html>

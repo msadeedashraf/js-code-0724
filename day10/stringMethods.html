@@ -7,13 +7,45 @@
 </head>
 <body>
 
+
     <h1>Credit Card</h1>
-    <p id="demo"></p>
+    <label for="cardno">Card</label>
+    <input type="text" id="cardno" maxlength="50"  value="1222-1213-1213-2001"  >
+   
+    <br>
+    <label for="seperator">Seperator</label>
+    <select name="" id="seperator">
+        <option value="-">-</option>
+        <option value="|">|</option>
+        <option value="$">$</option>
+        
+       
+    </select>
+    <br>
+    <button onclick="myCreditCardConvertor()" id="convert">Convert</button>
+    <br>
+    <label for="result">Converted No : </label>
+    <span id="result"></span>
+
+    
 <script>
 
-    //var myResult = creditCardConvertor("2123|212123|212132|2132", "|");
-    var myResult = creditCardConvertor("2123-2121223-1212-6556", "-");
-    document.getElementById("demo").innerHTML = myResult;
+
+
+function myCreditCardConvertor()
+{
+    let outputColor = "color:red; font-size:20px;"
+
+    document.bgColor = "red";
+    const cardNumber = document.getElementById("cardno");
+    const mySeperator = document.getElementById("seperator");
+    console.log(cardNumber.value, outputColor);
+    //console.log(mySeperator.value);
+
+    var myResult = creditCardConvertor(cardNumber.value, mySeperator.value);
+    document.getElementById("result").innerHTML = myResult;
+}
+  
 
 
    
