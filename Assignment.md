@@ -15,3 +15,6 @@ Project 4 : Convert cen to Fer and Fer to Cen (switch using the radio button)
 Project 5 : Pickup the json for Monkey Data and create a simple layout with all the monkeys and their details on to the HTML.
 URL for the JSON is (https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/MonkeysApp/monkeydata.json)
 https://github.com/dotnet-presentations/dotnet-maui-workshop/blob/main/Art/CodedMonkeys.png
+
+https://api-ninjas.com/
+https://rapidapi.com/
