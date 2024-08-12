@@ -19,7 +19,8 @@ function getmonkeys(monkeys) {
   let myHtml = "";
   for (a = 0; a < monkeys.length; a++) {
     myHtml += `
-  <div class="card mb-3" style="max-width: 540px;">
+ 
+   <div class="card mb-3" style="max-width: 540px;">
             <div class="row g-0">
               <div class="col-md-4">
                 <img src=${monkeys[a].Image} class="img-fluid rounded-start" alt="...">
@@ -33,14 +34,12 @@ function getmonkeys(monkeys) {
               </div>
             </div>
           </div>
-    
- 
   
  
   `;
   }
 
-  console.log(myHtml);
+  //console.log(myHtml);
 
   document.getElementById("demo").innerHTML = myHtml;
 }
