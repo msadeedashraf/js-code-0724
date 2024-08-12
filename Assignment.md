@@ -18,3 +18,6 @@ https://github.com/dotnet-presentations/dotnet-maui-workshop/blob/main/Art/Coded
 
 https://api-ninjas.com/
 https://rapidapi.com/
+
+Assignment: 
+Find the top 30 free API for developers
